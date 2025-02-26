@@ -55,7 +55,7 @@ var Alphabet = ["h", "i", "j", "k"];
 
 Alphabet.push(42);
 
-document.write(Alphabet)
+console.log(Alphabet)
 
 
 
@@ -119,3 +119,137 @@ console.log(food);
 var _pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
 var reducedPets = _pets.slice(3, 5); 
 console.log(reducedPets);
+
+
+
+// End Home pdf
+
+
+
+
+
+//  chapteer 14-16 (ARRAYS)
+
+// Q 01. 
+var studentNames = [];
+
+
+// Q 02. 
+var studentNamesObject = new Array();
+
+
+// Q 03. 
+var stringsArray = ["karachi", "lahore", "islamabad"];
+
+
+// Q 04. 
+var numbersArray = [10, 20, 30, 40];
+
+
+// Q 05. 
+var booleanArray = [true, false,];
+
+
+// Q 06. 
+var mixedArray = ["Ali", 25, true];
+
+
+// Q 07
+
+
+var classes = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// Display the qualifications in the browser
+document.write("<h2> Qualifications:</h2>");
+document.write("<ol>");
+for (var i = 0; i < classes.length; i++) {
+  document.write("<li>" + classes[i] + "</li>");
+}
+document.write("</ol>");
+
+
+
+// Q 08
+
+
+var studentNames = ["Ali", "Faraz", "Daniyal"];
+
+var scores = [450, 380, 420];
+var totalMarks = 500;
+
+// Loop through the arrays to calculate and display the results
+for (var i = 0; i < studentNames.length; i++) {
+  var percentage = (scores[i] / totalMarks) * 100;
+  console.log("Student Name: " + studentNames[i]);
+  console.log("Score: " + scores[i] + " out of " + totalMarks);
+  console.log("Percentage: " + percentage.toFixed(2) + "%");
+  console.log("-----------------------------");
+}
+
+
+
+
+//  Q 10
+
+var studentScores = [85, 72, 90, 68, 95];
+studentScores.sort((a, b) => a - b);
+console.log("Sorted student scores:", studentScores);
+
+//  Q 11
+
+
+var country = ["Pakistan ", "India", "Japan", "England", "Zimbawe"];
+var selectedcountry = country.slice(1, 4); 
+console.log("Selected Country:", selectedcountry);
+
+//  Q 12
+
+var arr = ["This ", " is ", " my ", " cat"];
+var sentence = arr.join; 
+
+console.log("Sentence:", sentence);
+
+
+// Q 13
+
+var rank = [];
+
+
+rank.push('first');
+rank.push('second');
+rank.push('third');
+
+console.log(rank.shift()); 
+console.log(rank.shift());
+console.log(rank.shift()); 
+
+// Q 14
+
+
+var rank1 = [];
+
+rank1.push("first");
+rank1.push("second");
+rank1.push("third");
+
+console.log(" after pushes:", rank1);
+
+console.log(rank1.pop()); 
+console.log(rank1.pop()); 
+console.log(rank1.pop()); 
+
+
+
+// Q 15
+
+
+let stack = [];
+stack.push("Value 1");
+stack.push("Value 2");
+stack.push("Value 3");
+
+
+console.log("Last In-First Out order:");
+ if(stack.length > 0) {
+  console.log(stack.pop());
+}
