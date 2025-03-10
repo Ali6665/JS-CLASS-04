@@ -243,7 +243,7 @@ console.log(rank1.pop());
 // Q 15
 
 
-let stack = [];
+var stack = [];
 stack.push("Value 1");
 stack.push("Value 2");
 stack.push("Value 3");
